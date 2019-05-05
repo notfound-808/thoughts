@@ -1,0 +1,7 @@
+{% for i in thoughts %}
+  <div class="thoughts">
+    <h4>{{ i.pub_date }} {{ i.headline }}</h4>
+    <hr>
+    <h5>{{ i.content }}</h5>
+  </div>
+{% endfor %}

@@ -1,0 +1,28 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="ua" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>thoughts not found</title>
+    <link rel="stylesheet" href="{% static 'engine/main.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  </head>
+  <body>
+    <a name="top"></a>
+    <p><h1>thoughts</h1></p>
+    <form class="" action="^search:search" method="get">
+      <p><input type="text" name="input" value=""></p>
+      <p><button type="button" name="button">Знайти</button></p>
+    </form>
+
+    <p><a href="admin/">Админка </a><a href="">| </a> <a href="#bottom">Вниз</a></p>
+
+    {% block content %}
+	  <h1>ПОМИЛКА (ДАНІ НЕ ПОДГРУЗИЛИСЬ)</h1>
+    {% endblock %}
+
+    <a name="bottom"></a>
+    <p><a href="#top">Наверх</a></p>
+
+  </body>
+</html>
